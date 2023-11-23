@@ -1,0 +1,55 @@
+#include<stdio.h>
+int main()
+{
+    int A=0,B=1,C=2,d=3,e=4,f=5,g=6,h=7,I=8,J=9,K=10,L=11,m=12,n=13,o=14,p=15,q=16,r=17,s=18,t=19,u=20,v=21,w=22,x=23,y=24,z=25;
+	int a[10][10],b[10][10],c[10][10],i,j,l,k;
+	printf("enter first matrix");
+	for(i=0;i<1;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("\nenter key matrix");
+	for(l=0;l<3;l++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&b[l][j]);
+		}
+	}
+	for(i=0;i<1;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			c[i][j]=0;
+			for(k=0;k<3;k++)
+			{
+				c[i][j]=c[i][j]+a[i][k]*b[k][j];
+			}
+				
+			
+		}
+	}
+	printf("\n*******\n");
+	for(i=0;i<1;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",c[i][j]%26);
+		}
+	}
+	printf("\n******encrypted value******\n");
+		for(i=0;i<1;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%c\t",c[i][j]%26+'A');
+		}
+	}
+	
+	return 0;
+	
+	
+}
