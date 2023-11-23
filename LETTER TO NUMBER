@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int a[100][100],i,j;
+	char s[100][100];
+	printf("enter the characters");
+	for(i=0;i<1;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%c",&s[i][j]);
+		}
+	}
+		for(i=0;i<1;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			a[i][j]=s[i][j]-'A';
+		}
+	}
+		for(i=0;i<1;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d,",a[i][j]);
+		}
+	}
+		
+	
+}
